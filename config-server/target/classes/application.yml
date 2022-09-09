@@ -1,0 +1,13 @@
+server:
+  port: 8585
+spring:
+  profiles:
+    include: native
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - classpath:/config/customer
+
